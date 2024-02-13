@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="./css/main.css/main.css">
+    <title>Portfolio</title>
+</head>
+<body id="bg-contact">
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <div class="menu">
+            <div class="menu-branding">
+                <div class="portrait">
+                    <img src="./imgs/portrait.jpg" alt="portrait">
+                </div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item ">
+                    <a href="/" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">ABOUT ME</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="./work.html" class="nav-link">MY WORK</a>
+                </li>
+                <li class="nav-item active ">
+                    <a href="./contact.html" class="nav-link">CONTECT ME</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main id="contact">
+        <div class="container">
+            <div class="contact">
+                <h1 class="text-secondary">Contact Me</h1>
+                <p class="text-secondary">Feel free to contact me any time. i will respond as soon as possible.</p>
+                <form action="mailto:2manym7md90@gmail.com" method="get">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="text" name="message" id="message" placeholder="Message">
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                
+                <h3 class="text-secondary" >Info</h3>
+                <ul class="info">
+                    <li class="email">
+                        <i class="fa fa-envelope"></i>
+                        <p>2manym7md90@gmail.com</p>
+                    </li>
+                    <li class="tel">
+                        <i class="fa fa-phone"></i>
+                        <p>+20 1069626440</p>
+                    </li>
+                    <li class="living">
+                        <i class="fa fa-home"></i>
+                        <p>Mansoura, Egypt</p>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </main>
+    <script src="./../node_modules/aos/dist/aos.js"></script>
+    <script>AOS.init()</script>
+    <script src="js/main.js" ></script>
+</body>
+</html>
