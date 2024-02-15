@@ -2,7 +2,6 @@
   "name": "portfolioo",
   "version": "1.0.0",
   "description": "Portfolio Responsive Website",
-  "main": "index.js",
   "homepage": "https://github.com/Amany091/myportfolio.git",
   "scripts": {
     "sass": "node-sass -w dist/scss/main.scss dist/scss/_config.scss dist/scss/_mobile.scss -o dist/css/main.css"

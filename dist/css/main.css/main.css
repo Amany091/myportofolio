@@ -122,8 +122,7 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     padding: 0.2rem 1rem;
-    margin-bottom: 2rem;
-    background: rgba(73, 73, 73, 0.5); }
+    margin-bottom: 2rem; }
 
 .text-secondary {
   color: #1a99ee; }
@@ -146,7 +145,7 @@ header {
     left: 0;
     top: 0;
     height: 55%;
-    background: #444;
+    background-color: #444;
     width: 100%;
     border-left: 2px solid #fff;
     animation: typing 3.5s steps(20) infinite; }
@@ -317,39 +316,21 @@ main#about {
     background: #4e4e4e;
     margin: 1rem 0;
     width: 100%; }
-    main#about .skills #tech {
-      width: 70vw;
-      margin: 1rem auto; }
-      main#about .skills #tech .skill {
-        margin: 1rem 0; }
-        main#about .skills #tech .skill h3 {
-          display: flex;
-          justify-content: space-between; }
-          main#about .skills #tech .skill h3 span {
-            font-size: 13px;
-            border: 1px solid #1a99ee;
-            padding: 3px 5px;
-            border-radius: 5px;
-            color: set-test-color(#1a99ee); }
-        main#about .skills #tech .skill .progress {
-          height: 30px;
-          background-color: #eee;
-          position: relative;
-          margin: 0.5rem 0; }
-          main#about .skills #tech .skill .progress span {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background-color: #1a99ee; }
-        main#about .skills #tech .skill .HTML {
-          animation: html 3s; }
-        main#about .skills #tech .skill .CSS {
-          animation: css 3s; }
-        main#about .skills #tech .skill .Javascript {
-          animation: javascript 3s; }
-        main#about .skills #tech .skill .SASS {
-          animation: sass 3s; }
+    main#about .skills .skills-container {
+      background-color: #0000;
+      display: flex;
+      justify-content: center; }
+      main#about .skills .skills-container span i {
+        margin: 10px;
+        font-size: 35px; }
+        main#about .skills .skills-container span i.html5 {
+          color: red; }
+        main#about .skills .skills-container span i.css3 {
+          color: #204bf6; }
+        main#about .skills .skills-container span i.js {
+          color: orange; }
+        main#about .skills .skills-container span i.sass {
+          color: palevioletred; }
   main#about .services {
     width: 100%;
     padding: 1rem 0; }
@@ -376,30 +357,6 @@ footer {
   text-align: center;
   font-size: 28px;
   color: #fff; }
-
-@keyframes html {
-  0% {
-    width: 0%; }
-  100% {
-    width: 80%; } }
-
-@keyframes css {
-  0% {
-    width: 0%; }
-  100% {
-    width: 80%; } }
-
-@keyframes javascript {
-  0% {
-    width: 0%; }
-  100% {
-    width: 70%; } }
-
-@keyframes sass {
-  0% {
-    width: 0%; }
-  100% {
-    width: 40%; } }
 
 #bg-work {
   background-color: #444;
@@ -434,6 +391,18 @@ footer {
       text-decoration: underline; }
     .projects .project .description {
       color: #c2c2c2; }
+    .projects .project span i {
+      margin: 0 5px; }
+      .projects .project span i.html {
+        color: red; }
+      .projects .project span i.css3 {
+        color: #204bf6; }
+      .projects .project span i.js {
+        color: orange; }
+      .projects .project span i.sass {
+        color: palevioletred; }
+      .projects .project span i.tailwindcss {
+        color: #204bf6; }
     .projects .project .project-view {
       display: flex;
       flex-flow: row; }
@@ -443,6 +412,8 @@ footer {
         transition: all  .5s ease-out; }
         .projects .project .project-view a:hover {
           color: #1a99ee; }
+      .projects .project .project-view #project-demo {
+        text-decoration: none; }
     .projects .project .skill p {
       font-size: 14px;
       font-weight: 700;
@@ -470,7 +441,7 @@ footer {
   .container > div {
     width: 80%; }
   .container .contact {
-    background-color: #fff;
+    background-color: #a8d8f9;
     padding: 10px; }
     .container .contact form {
       display: flex;
@@ -492,7 +463,8 @@ footer {
         transition: all  .5s ease-out;
         display: block;
         margin: 20px auto;
-        border-radius: 5px; }
+        border-radius: 5px;
+        border-color: #1a99ee; }
         .container .contact form button:hover {
           background: #1a99ee; }
 
